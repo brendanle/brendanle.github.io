@@ -1,7 +1,23 @@
 <!doctype html>
 <html>
 <head>
-    <title>brendan @ hunter college</title>
+    <title></title>
+    <script>
+        let counter = 0;
+        let titleText = "brendan @ ";
+        const finalText = "brendan @ hunter college";
+
+        function updateTitle() {
+            counter++;
+            if (counter <= finalText.length) {
+                document.title = finalText.substring(0, counter);
+            } else {
+                counter = 0; // Reset the counter to make the animation repeat
+            }
+        }
+
+        const titleInterval = setInterval(updateTitle, 200); // Adjust the interval in milliseconds (200ms in this example)
+    </script>
     <link rel="icon" href="./images/computer_favicon.gif" type="image/png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
