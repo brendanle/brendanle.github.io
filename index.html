@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+    <title>brendan @ hunter college</title>
+    <link rel="icon" href="./images/computer_favicon.gif" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <style type="text/css">
+        a:link { color: #fefefe; }
+        a:visited { color: #fefefe; }
+        a:hover { color: #ae9fbe; }
+        a:active { color: #fefefe; }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/plugin/utc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/plugin/timezone.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/plugin/advancedFormat.min.js"></script>
+</head>
+<body>
+    <p1>Brendan Le</p1><br><br>
+
+    <div id="centered-time-container">
+        <div id="time-container">
+            <div id="greeting-and-image">
+                <img id="day-night-image" src="" alt="Day or night image" />
+                <span id="greeting-text"></span>
+            </div>
+            <div id="current-time"></div>
+        </div>
+    </div><br>
+
+    comp sci undergrad @ <a href="https://hunter.cuny.edu/">Hunter College</a><br>
+    <i class="fa-brands fa-github"></i>
+    <a href="https://github.com/3brendan">GitHub</a>
+    <i class="fa-solid fa-file"></i>
+    <a href="resume.html">Resume</a>
+    <i class="fa-brands fa-linkedin"></i>
+    <a href="https://www.linkedin.com/in/lebrendan/">LinkedIn</a>
+
+    <div class="now-playing">
+        <img id="song-cover" src="./images/luna.jpeg" alt="Album cover" />
+        <div class="song-info">
+            <p id="song-text">Currently listening to <span id="song-title"></span> by <span id="song-artist"></span></p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

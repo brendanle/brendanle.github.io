@@ -1,0 +1,61 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: calc(12px + 0.5vw); /* Base font size with scaling based on viewport width */
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  padding: 50px;
+  margin: 20px;
+}
+
+* {
+  background-color: #121212;
+}
+
+/* Song cover styles */
+#song-cover {
+  width: 20vw; /* Adjust the width based on viewport width */
+  max-width: 300px; /* Set a maximum width */
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-top: 20px; /* Add margin to the top */
+  margin-bottom: -15px;
+}
+
+.song-title {
+  font-size: 1.5em; /* Scale based on the base font size */
+  font-weight: bold;
+  margin: 0;
+}
+
+.song-artist {
+  font-size: 1.25em; /* Scale based on the base font size */
+  margin: 0;
+}
+
+/* Day-night image styles */
+#day-night-image {
+  height: 1.2em; /* Adjust this value to match the desired image height relative to the text size */
+  width: auto;
+  margin-right: 0.5em; /* Add some space between the image and the text */
+}
+
+/* Time container styles */
+#centered-time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#time-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#greeting-and-image {
+  display: flex;
+  align-items: center;
+}
