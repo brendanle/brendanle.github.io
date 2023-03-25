@@ -1,15 +1,18 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  height: 100%;
+  overflow: hidden; /* Added to disable scrolling */
+}
+
 body {
   font-family: 'Inter', sans-serif;
-  font-size: calc(12px + 0.5vw); /* Base font size with scaling based on viewport width */
+  font-size: calc(12px + 0.5vw);
   line-height: 30px;
   text-align: center;
   color: white;
   padding: 50px;
-  margin: 20px;
-}
-
-* {
-  background-color: #121212;
 }
 
 /* Song cover styles */
