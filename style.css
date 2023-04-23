@@ -1,111 +1,104 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: #121212;
-  height: 100%;
-  overflow: hidden; /* Added to disable scrolling */
-}
-
 body {
-  font-family: 'Inter', sans-serif;
-  font-size: calc(12px + 0.5vw);
-  line-height: 30px;
-  text-align: center;
-  color: white;
-  padding: 50px;
-}
 
-/* Song cover styles */
-#song-cover {
-  width: 20vw; /* Adjust the width based on viewport width */
-  max-width: 300px; /* Set a maximum width */
-  height: auto;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-top: 20px; /* Add margin to the top */
-  margin-bottom: -15px;
-}
-
-.song-title {
-  font-size: 1.5em; /* Scale based on the base font size */
-  font-weight: bold;
-  margin: 0;
-}
-
-.song-artist {
-  font-size: 1.25em; /* Scale based on the base font size */
-  margin: 0;
-}
-
-/* Day-night image styles */
-#day-night-image {
-  height: 1.2em; /* Adjust this value to match the desired image height relative to the text size */
-  width: auto;
-  margin-right: 0.5em; /* Add some space between the image and the text */
-}
-
-/* Time container styles */
-#centered-time-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#time-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-#greeting-and-image {
-  display: flex;
-  align-items: center;
-}
-
-#greeting-text {
-  white-space: nowrap;
-}
-
-#note-container {
+    font-weight: 400;
+    font-family: "Roboto Mono", monospace, sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    padding-top: 30px;
+    height: 150;
 }
 
-form {
+header {
+    text-align: center;
+    font-size: 1.25em;
+    margin-top: 10px;
+}
+
+.details {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    justify-content: center;
+    align-items: center;
+    margin-top: -30px;
+    height: 50px;
 }
 
-textarea {
-    margin-bottom: 10px;
-    resize: none;
-    height: 200px;
-    overflow: auto;
-    background-color: #232323;
-    color: #ffffff;
-    border: 1px solid #ffffff;
+.details h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1.15;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.resume-link,
+.spotify-playing {
+    width: 30%;
+    text-align: center;
+    padding: 40px;
+    margin: 0 30px; /* Add margin to space out the two divs */
+}
+
+.resume-link {
+    filter: blur(3px);
+}
+
+.resume-link:hover {
+    filter: blur(0);
+}
+
+img:not(#song-cover) {
+    filter: blur(3px);
+    max-width: 100%;
+}
+
+.spotify-playing #song-cover {
+    filter: none;
+    width: 100%;
+
+}
+img {
+    max-height: 500px; /* adjust this value as needed */
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     padding: 10px;
-    font-family: 'Inter', sans-serif;
-}
-
-button {
-    align-self: center;
-    background-color: #ffffff;
-    color: #121212;
+    background-color: transparent;
     border: none;
-    padding: 8px 20px;
-    cursor: pointer;
-    font-size: 1em;
-    font-family: 'Inter', sans-serif;
-    transition: 0.3s;
-}
-
-button:hover {
-    background-color: #ae9fbe;
-    color: #ffffff;
+    z-index: 9999;
+    transition: all 0.3s ease-out;
+  }
+  
+  
+  .social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #555;
+    transition: all 0.3s ease-out;
+  }
+  
+  .social-icons a:hover {
+    color: #000;
+  }
+  
+  .social-icons.hidden {
+    transform: translateY(100%);
+  }
+  
+.about-me {
+    max-width: 800px;
+    margin: 0 auto;
 }

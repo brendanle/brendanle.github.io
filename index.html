@@ -1,77 +1,50 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title></title>
-    <script>
-        let counter = 0;
-        let titleText = "brendan @ ";
-        const finalText = "brendan @ hunter college";
-
-        function updateTitle() {
-            counter++;
-            if (counter <= finalText.length) {
-                document.title = finalText.substring(0, counter);
-            } else {
-                counter = 0; // Reset the counter to make the animation repeat
-            }
-        }
-
-        const titleInterval = setInterval(updateTitle, 200); // Adjust the interval in milliseconds (200ms in this example)
-    </script>
-    <link rel="icon" href="./images/computer_favicon.gif" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <style type="text/css">
-        a:link { color: #fefefe; }
-        a:visited { color: #fefefe; }
-        a:hover { color: #ae9fbe; }
-        a:active { color: #fefefe; }
-    </style>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/plugin/utc.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/plugin/timezone.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.7/plugin/advancedFormat.min.js"></script>
+  <meta charset="UTF-8">
+  <title>brendan's site</title>
+  <link rel="icon" type="image/png" href="files/computer_favicon.gif">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="...">
 </head>
 <body>
-    <p1>Brendan Le</p1><br><br>
 
-    <div id="centered-time-container">
-        <div id="time-container">
-            <div id="greeting-and-image">
-                <img id="day-night-image" src="" alt="Day or night image" />
-                <span id="greeting-text"></span>
-            </div>
-            <div id="current-time"></div>
+    <header>
+        <h1 id="name">brendan</h1>
+    </header>
+
+    <div class="details">
+        <h2> </h2>
+        <script src="script.js"></script>
+    </div>
+
+    <div class="about-me">
+        <h3 class=>Hello, I'm Brendan, a 23-year-old developer based in New York City. I'm currently pursuing a major in Computer Science at Hunter College.</h3>
+
+    </div>
+
+    <div class="container">
+        <div class="spotify-playing">
+            <img id="song-cover" src="./files/luna.jpeg" alt="Album cover" />
+                <div class="song-info">
+                    <p id="song-text">Currently listening to <span id="song-title"></span> by <span id="song-artist"></span></p>
+                </div>
+            <script src="spotify.js"></script>
         </div>
-    </div><br>
 
-    comp sci undergrad @ <a href="https://hunter.cuny.edu/">Hunter College</a><br>
-    <i class="fa-brands fa-github"></i>
-    <a href="https://github.com/brendanle">GitHub</a>
-    <i class="fa-solid fa-file"></i>
-    <a href="resume.html">Resume</a>
-    <i class="fa-brands fa-linkedin"></i>
-    <a href="https://www.linkedin.com/in/lebrendan/">LinkedIn</a>
-
-    <div class="now-playing">
-        <img id="song-cover" src="./images/luna.jpeg" alt="Album cover" />
-        <div class="song-info">
-            <p id="song-text">Currently listening to <span id="song-title"></span> by <span id="song-artist"></span></p>
+        <div class="resume-link">
+            <a href="/files/resume.pdf" target="_blank">
+                <img src="/files/resume_blur.png" alt="Resume Image" style="width: 100%; max-width: 500px;"/>
+            </a>
         </div>
     </div>
-    
-    <div id="note-container">
-        <form id="noteForm">
-            <textarea id="noteText" placeholder="Type your note here..."></textarea>
-            <button type="submit">Send Note</button>
-        </form>
-    </div>
-    
-    <script src="discord.js"></script>
 
-    <script src="app.js"></script>
+    <div class="social-icons">
+        <a href="https://github.com/brendanle"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/lebrendan"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:brendanle1228@email.com"><i class="fas fa-envelope"></i></a>
+    </div>
+
 </body>
-</html>
