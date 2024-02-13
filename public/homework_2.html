@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model</title>
+  <!--
+  Create 5 boxes diagonally using the box-model and the tag <div>, ✅
+  and have their borders double as you go down the page. ✅
+  Write any text you'd like in each of the boxes with all the padding attributes set to 10px. ✅
+  -->
+  <style>
+    div {
+      height: 300px;
+      width: 300px;
+    }
+    #red-box {
+      background-color: red;
+      padding: 10px;
+      border: 10px solid black;
+    }
+    #orange-box {
+      background-color: orange;
+      padding: 10px;
+      border: 20px solid black;
+      margin-left: 340px;
+    }
+    #yellow-box {
+      padding: 10px;
+      background-color: yellow;
+      border: 40px solid black;
+      margin-left: 700px;
+    }
+    #green-box {
+      padding: 10px;
+      background-color: green;
+      border: 80px solid black;
+      margin-left: 1100px;
+    }
+    #blue-box {
+      padding: 10px;
+      background-color: blue;
+      border: 160px solid black;
+      margin-left: 1580px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="red-box">
+    <p>
+        Red Box
+    </p>
+  </div>
+
+  <div id="orange-box">
+    <p>
+        Orange Box
+    </p>
+  </div>
+
+  <div id="yellow-box">
+    <p>
+        Yellow Box
+    </p>
+  </div>
+
+  <div id="green-box">
+    <p>
+        Green Box
+    </p>
+  </div>
+
+  <div id="blue-box">
+    <p>
+        Blue Box
+    </p>
+  </div>
+</body>
+
+</html>
